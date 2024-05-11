@@ -1,0 +1,91 @@
+/*
+    By ONANA vital
+    With SCSS
+*/
+
+*::selection
+{
+    background-color: var(--color);
+    color: #fff;
+}
+
+/* Variables */
+:root
+{
+    --font: Figtree, sans-serif;
+}
+
+html,
+body
+{
+    font-family: var(--font);
+}
+body::-webkit-scrollbar 
+{
+    width: 2px; /* Adjust the width of the scrollbar */
+    background-color: #F5F5F5; /* Set the track color */
+}  
+/* Target the scrollbar thumb */
+body::-webkit-scrollbar-thumb 
+{
+    background-color: #ccc; /* Set the thumb color */
+    border-radius: 6px; /* Add rounded corners */
+}
+
+header
+{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.836),rgba(0, 0, 0, 0.841)),
+    url('../assets/img/15622367_926979844068982_163802606641907504_n.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
+
+    #text
+    {
+        animation: fadeInRight 1.8s;
+    }
+}
+
+#plan
+{
+    #block1 img
+    {
+        width: 500px;
+        height: 600px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    #block2 img
+    {
+        width: 500px;
+        height: 200px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+}
+
+#category_card
+{
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    h3
+    {
+        color: #fff;
+    }
+}
+#category_card:hover
+{
+    opacity: 0.8;
+    transform: translateY(10px);
+}
+
+#call_To_Action
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('../assets/img/img3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
